@@ -1,0 +1,21 @@
+body {
+    font-family: sans-serif;
+}
+h1 {
+    text-align: center;
+}
+.timetable {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    grid-gap: 1px;
+}
+.timetable div {
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+.calculator {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 20px;
+}
