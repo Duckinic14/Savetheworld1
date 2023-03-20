@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Todo List</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Student Todo List</h1>
+    <div class="timetable">
+        <div class="timetable">
+         <div></div>
+         <div>Monday</div>     
+         <div>Tuesday</div>
+         <div>Wednesday</div>
+         <div>Thursday</div>
+         <div>Friday</div>
+         <div>Saturday</div>
+         <div>Sunday</div>
+         <div>9:00am - 10:00am</div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div>10:00am - 11:00am</div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div>11:00am - 12:00pm</div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div>12:00pm - 1:00pm</div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div>1:00pm - 2:00pm</div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div>2:00pm - 3:00pm</div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div>3:00pm - 4:00pm</div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div>4:00pm - 5:00pm</div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div>5:00pm - 6:00pm</div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div>6:00pm - 7:00pm</div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div>7:00pm - 8:00pm</div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div>8:00pm - 9:00pm</div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+         <div></div>
+     </div>
+    </div>
+    <div class="calculator">
+        <div class="calculator">
+         <h2>Calculator</h2>
+         <p>Enter the number of hours spent on each task:</p>
+         <form>
+          <label for="task1">Task 1:</label>
+           <input type="number" id="task1" name="task1"><br><br>
+           <label for="task2">Task 2:</label>
+           <input type="number" id="task2" name="task2"><br><br>
+           <label for="task3">Task 3:</label>
+         <input type="number" id="task3" name="task3"><br><br>
+           <button type="button" 
+        onclick="calculate()">Calculate</button>
+         </form>
+         <p>Total number of hours spent: <span id="total"></span></p>
+        </div>
+
+        <script>
+         function calculate() {
+           var task1 = 
+        parseFloat(document.getElementById('task1').value);
+           var task2 = 
+        parseFloat(document.getElementById('task2').value);
+           var task3 = 
+        parseFloat(document.getElementById('task3').value);
+           var total = task1 + task2 + task3;
+           
+        document.getElementById('total').innerHTML = total;
+         }
+        </script>
+    </div>
+</body>
+</html>
